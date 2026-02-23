@@ -1,0 +1,40 @@
+﻿@inherits UmbracoViewPage<Page>
+
+<a asp-controller="DatabaseCache" asp-action="Clear">Clear Database Cache</a>
+
+<table>
+    <thead>
+        <tr>
+            <th>Property</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Checkbox</td>
+            <td>@Model.Checkbox</td>
+        </tr>
+        <tr>
+            <td>Textstring</td>
+            <td>@Model.Textstring</td>
+        </tr>
+    </tbody>
+</table>
+
+<style>
+    a {
+        display: inline-block;
+        margin-bottom: 1rem;    
+    }
+
+    table {
+        font-family: Consolas, monospace;
+        border-collapse: collapse;
+    }
+
+    td, th {
+        padding: .5rem 1rem;
+        border: 1px solid lightgray;
+    }
+</style>
